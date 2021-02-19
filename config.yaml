@@ -15,23 +15,23 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
+  - id: nivash-portfolio # unique identifier
+    name: nivash.me
+    description: 'Blog & Portfolio of Nivash😜' # default=empty
+    url: 'https://nivash.me' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
 
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
+  - id: cloud-nivash-me
+    name: cloud.nivash.me
+    description: 'XI11A CLOUD ☁️ Storage'
+    url: 'https://cloud.nivash.me'
     method: GET
     expectStatus: 200
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+  - id: xi11a-cloudflare-worker
+    name: XI11A Cloudflare Worker
+    url: 'https://cloud.xi11a.workers.dev'
     method: GET
     expectStatus: 200
