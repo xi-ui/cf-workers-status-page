@@ -1,8 +1,8 @@
 settings:
   title: 'Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+  url: 'https://status.nivash.me' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 90 # number of days you want to display in histogram
+  daysInHistogram: 30 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: 'All Systems Operational'
@@ -26,12 +26,12 @@ monitors:
   - id: cloud-nivash-me
     name: cloud.nivash.me
     description: 'XI11A CLOUD ☁️ Storage'
-    url: 'https://cloud.nivash.me'
+    url: 'https://cloud.nivash.me/0:/'
     method: GET
     expectStatus: 200
 
   - id: xi11a-cloudflare-worker
     name: XI11A Cloudflare Worker
-    url: 'https://cloud.xi11a.workers.dev'
+    url: 'https://cloud.xi11a.workers.dev/0:/'
     method: GET
     expectStatus: 200
